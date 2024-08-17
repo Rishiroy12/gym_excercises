@@ -5,13 +5,19 @@ import Logo from '../assets/images/Logo.png'
 
 const Navbar = () => {
   return (
-    <Stack>
+    <Stack 
+    direction="row"
+    justify-content="space-around" sx={{gap:{sm:'122px',xs:'40px'}, mt:{sm:'32px' , xs:'20px'}, justifyContent:'none'}} px='20px'>
       <Link to="/" style ={
     {textDecoration:'none' , color:'#3A1212', borderBottom:'3px solid #FF2625'}}>
       <img src = {Logo} alt= "logo" style={{
-        width: '50px', height: '48px', margin:'0 20px'}} />
+        width: '48px', height: '48px', margin:'0 20px'}} />
         </Link>
-        <Stack>
+        <Stack 
+        direction="row"
+        gap="40px"
+        fontSize="25px"
+        alignItems="flex-end">
   <Link to="/">Home</Link>
   <a href = "#exercises" style ={
     {textDecoration:'none' , color:'#3A1212'}}
